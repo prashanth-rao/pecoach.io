@@ -1,536 +1,456 @@
 <html>
-
 <head>
 <meta http-equiv=Content-Type content="text/html; charset=windows-1252">
 <meta name=Generator content="Microsoft Word 14 (filtered)">
 <style>
 <!--
- /* Font Definitions */
- @font-face
-	{font-family:Wingdings;
-	panose-1:5 0 0 0 0 0 0 0 0 0;}
+/* Font Definitions */
 @font-face
-	{font-family:Wingdings;
-	panose-1:5 0 0 0 0 0 0 0 0 0;}
+{font-family:Wingdings;
+panose-1:5 0 0 0 0 0 0 0 0 0;}
 @font-face
-	{font-family:Calibri;
-	panose-1:2 15 5 2 2 2 4 3 2 4;}
+{font-family:Wingdings;
+panose-1:5 0 0 0 0 0 0 0 0 0;}
 @font-face
-	{font-family:Tahoma;
-	panose-1:2 11 6 4 3 5 4 4 2 4;}
+{font-family:Calibri;
+panose-1:2 15 5 2 2 2 4 3 2 4;}
 @font-face
-	{font-family:"var\(--brand-font\)";
-	panose-1:0 0 0 0 0 0 0 0 0 0;}
- /* Style Definitions */
- p.MsoNormal, li.MsoNormal, div.MsoNormal
-	{margin-top:0in;
-	margin-right:0in;
-	margin-bottom:10.0pt;
-	margin-left:0in;
-	line-height:115%;
-	font-size:12.0pt;
-	font-family:"Arial","sans-serif";}
+{font-family:Tahoma;
+panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+{font-family:"var\(--brand-font\)";
+panose-1:0 0 0 0 0 0 0 0 0 0;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+{margin-top:0in;
+margin-right:0in;
+margin-bottom:10.0pt;
+margin-left:0in;
+line-height:115%;
+font-size:12.0pt;
+font-family:"Arial","sans-serif";}
 h1
-	{mso-style-link:"Heading 1 Char";
-	margin-right:0in;
-	margin-left:0in;
-	font-size:24.0pt;
-	font-family:"Times New Roman","serif";
-	font-weight:bold;}
+{mso-style-link:"Heading 1 Char";
+margin-right:0in;
+margin-left:0in;
+font-size:24.0pt;
+font-family:"Times New Roman","serif";
+font-weight:bold;}
 h2
-	{mso-style-link:"Heading 2 Char";
-	margin-right:0in;
-	margin-left:0in;
-	font-size:18.0pt;
-	font-family:"Times New Roman","serif";
-	font-weight:bold;}
+{mso-style-link:"Heading 2 Char";
+margin-right:0in;
+margin-left:0in;
+font-size:18.0pt;
+font-family:"Times New Roman","serif";
+font-weight:bold;}
 h6
-	{mso-style-link:"Heading 6 Char";
-	margin-top:10.0pt;
-	margin-right:0in;
-	margin-bottom:0in;
-	margin-left:0in;
-	margin-bottom:.0001pt;
-	line-height:115%;
-	page-break-after:avoid;
-	font-size:12.0pt;
-	font-family:"Cambria","serif";
-	color:#243F60;
-	font-weight:normal;
-	font-style:italic;}
+{mso-style-link:"Heading 6 Char";
+margin-top:10.0pt;
+margin-right:0in;
+margin-bottom:0in;
+margin-left:0in;
+margin-bottom:.0001pt;
+line-height:115%;
+page-break-after:avoid;
+font-size:12.0pt;
+font-family:"Cambria","serif";
+color:#243F60;
+font-weight:normal;
+font-style:italic;}
 a:link, span.MsoHyperlink
-	{color:blue;
-	text-decoration:underline;}
+{color:blue;
+text-decoration:underline;}
 a:visited, span.MsoHyperlinkFollowed
-	{color:purple;
-	text-decoration:underline;}
+{color:purple;
+text-decoration:underline;}
 p
-	{margin-right:0in;
-	margin-left:0in;
-	font-size:12.0pt;
-	font-family:"Times New Roman","serif";}
+{margin-right:0in;
+margin-left:0in;
+font-size:12.0pt;
+font-family:"Times New Roman","serif";}
 code
-	{font-family:"Courier New";}
+{font-family:"Courier New";}
 p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
-	{mso-style-link:"Balloon Text Char";
-	margin:0in;
-	margin-bottom:.0001pt;
-	font-size:8.0pt;
-	font-family:"Tahoma","sans-serif";}
+{mso-style-link:"Balloon Text Char";
+margin:0in;
+margin-bottom:.0001pt;
+font-size:8.0pt;
+font-family:"Tahoma","sans-serif";}
 span.Heading1Char
-	{mso-style-name:"Heading 1 Char";
-	mso-style-link:"Heading 1";
-	font-family:"Times New Roman","serif";
-	font-weight:bold;}
+{mso-style-name:"Heading 1 Char";
+mso-style-link:"Heading 1";
+font-family:"Times New Roman","serif";
+font-weight:bold;}
 span.Heading2Char
-	{mso-style-name:"Heading 2 Char";
-	mso-style-link:"Heading 2";
-	font-family:"Times New Roman","serif";
-	font-weight:bold;}
+{mso-style-name:"Heading 2 Char";
+mso-style-link:"Heading 2";
+font-family:"Times New Roman","serif";
+font-weight:bold;}
 span.z-TopofFormChar
-	{mso-style-name:"z-Top of Form Char";
-	mso-style-link:"z-Top of Form";
-	font-family:"Arial","sans-serif";
-	display:none;}
+{mso-style-name:"z-Top of Form Char";
+mso-style-link:"z-Top of Form";
+font-family:"Arial","sans-serif";
+display:none;}
 span.z-BottomofFormChar
-	{mso-style-name:"z-Bottom of Form Char";
-	mso-style-link:"z-Bottom of Form";
-	font-family:"Arial","sans-serif";
-	display:none;}
+{mso-style-name:"z-Bottom of Form Char";
+mso-style-link:"z-Bottom of Form";
+font-family:"Arial","sans-serif";
+display:none;}
 span.BalloonTextChar
-	{mso-style-name:"Balloon Text Char";
-	mso-style-link:"Balloon Text";
-	font-family:"Tahoma","sans-serif";}
+{mso-style-name:"Balloon Text Char";
+mso-style-link:"Balloon Text";
+font-family:"Tahoma","sans-serif";}
 span.Heading6Char
-	{mso-style-name:"Heading 6 Char";
-	mso-style-link:"Heading 6";
-	font-family:"Cambria","serif";
-	color:#243F60;
-	font-style:italic;}
+{mso-style-name:"Heading 6 Char";
+mso-style-link:"Heading 6";
+font-family:"Cambria","serif";
+color:#243F60;
+font-style:italic;}
 span.range-indicator
-	{mso-style-name:range-indicator;}
+{mso-style-name:range-indicator;}
 .MsoPapDefault
-	{margin-bottom:10.0pt;
-	line-height:115%;}
+{margin-bottom:10.0pt;
+line-height:115%;}
 @page WordSection1
-	{size:595.3pt 841.9pt;
-	margin:1.0in 1.0in 1.0in 1.0in;}
+{size:595.3pt 841.9pt;
+margin:1.0in 1.0in 1.0in 1.0in;}
 div.WordSection1
-	{page:WordSection1;}
- /* List Definitions */
- ol
-	{margin-bottom:0in;}
+{page:WordSection1;}
+/* List Definitions */
+ol
+{margin-bottom:0in;}
 ul
-	{margin-bottom:0in;}
+{margin-bottom:0in;}
 -->
 </style>
-
 </head>
-
 <body lang=EN-IN link=blue vlink=purple>
-
 <div class=WordSection1>
-
 <h1 align=center style='text-align:center'><span style='font-family:"Arial","sans-serif";
 color:#333333'>Fasting Day</span></h1>
-
 <h2 align=center style='text-align:center;box-sizing: border-box;margin:1rem;
 font-size:1rem' data-test-selector=card-description><span style='font-family:
 "Arial","sans-serif";color:#333333;font-weight:normal'>We're making meal
 planning &amp; food prep easy today, while adding a notch to your nutritional
 experience belt.</span></h2>
-
 </hgroup><aside class="FullscreenCard-coachingNotes" style="box-sizing: border-box; display: block; line-height: 1.6; text-align: center;">
-
 <p style='margin-top:0in;box-sizing: border-box'><span style='font-size:13.5pt;
-font-family:"Arial","sans-serif";color:#333333'>Coach's Notes:&nbsp;Experiment
 Day: Fast for a whole day (or as long as possible). This is the big one -- it
 helps clients learn about true hunger, that in general their hunger isn't an
 emergency, and explore their &quot;edges&quot; a bit.</span></p>
-
 </aside></header>
-
 <h1 style='margin:0in;margin-bottom:.0001pt;background:white;box-sizing: border-box;
 font-weight:var(--utils-css-text-weight-light) !important;font-size:var(--text-size-l)'><span
 style='font-family:"Arial","sans-serif";color:#333333'>You're viewing the full
 activity</span></h1>
-
 <form style='box-sizing: border-box;font-variant-ligatures: normal;font-variant-caps: normal;
 orphans: 2;text-align:start;widows: 2;-webkit-text-stroke-width: 0px;
 text-decoration-style: initial;text-decoration-color: initial;word-spacing:
 0px'>
-
 <h1 style='margin-top:0in;margin-right:0in;margin-bottom:9.0pt;margin-left:
 0in;box-sizing: border-box;color:var(--vc-lesson)'><span style='font-size:20.5pt;
 font-family:"var(--brand-font)","serif";color:#333333'><section id="ember117" class="ActivityElement ActivityElement--content is-expanded ActivityElement--lesson ember-view" style="box-sizing: border-box; display: inherit; margin-bottom: 3rem;">If
 done smart, fasting is a self-experiment with high rewards.</span></h1>
-
 <p style='margin-top:0in;box-sizing: border-box;line-height:var(--text-line-height-m);
 margin-bottom:1rem'><span style='font-size:13.5pt;font-family:"Arial","sans-serif";
 color:#333333'>The instructions of this self-experiment are simple.</span></p>
-
 <p style='margin-top:0in;box-sizing: border-box;line-height:var(--text-line-height-m);
 margin-bottom:1rem'><span style='font-size:13.5pt;font-family:"Arial","sans-serif";
-color:#333333'>For one day,&nbsp;<em style='box-sizing: border-box'><span
+color:#333333'>For one day, <em style='box-sizing: border-box'><span
 style='font-family:"Arial","sans-serif"'>don't eat anything</span></em>.</span></p>
-
 </section><section id="ember118" class="ActivityElement ActivityElement--content is-expanded ActivityElement--lesson ember-view" style="box-sizing: border-box; display: inherit; margin-bottom: 3rem;">
-
 <h1 style='margin-top:0in;margin-right:0in;margin-bottom:9.0pt;margin-left:
 0in;box-sizing: border-box;color:var(--vc-lesson)'><span style='font-size:20.5pt;
 font-family:"var(--brand-font)","serif";color:#333333'>Focus on learning</span></h1>
-
 <p style='margin-top:0in;box-sizing: border-box;line-height:var(--text-line-height-m);
 margin-bottom:1rem'><span style='font-size:13.5pt;font-family:"Arial","sans-serif";
 color:#333333'>The goal of dietary experiment days is to learn. To learn about:</span></p>
-
 <ul type=disc style='box-sizing: border-box;margin:1rem;line-height:var(--text-line-height-m)'>
- <li class=MsoNormal style='color:#333333;margin-bottom:12.0pt;line-height:
-     normal;box-sizing: border-box;padding-left:0.5rem'><span style='font-size:
-     13.5pt'>your body</span></li>
- <li class=MsoNormal style='color:#333333;margin-bottom:12.0pt;line-height:
-     normal;box-sizing: border-box;padding-left:0.5rem'><span style='font-size:
-     13.5pt'>your habits</span></li>
- <li class=MsoNormal style='color:#333333;margin-bottom:12.0pt;line-height:
-     normal;box-sizing: border-box;padding-left:0.5rem'><span style='font-size:
-     13.5pt'>your needs</span></li>
- <li class=MsoNormal style='color:#333333;margin-bottom:12.0pt;line-height:
-     normal;box-sizing: border-box;padding-left:0.5rem'><span style='font-size:
-     13.5pt'>your likes and dislikes</span></li>
+<li class=MsoNormal style='color:#333333;margin-bottom:12.0pt;line-height:
+normal;box-sizing: border-box;padding-left:0.5rem'><span style='font-size:
+13.5pt'>your body</span></li>
+<li class=MsoNormal style='color:#333333;margin-bottom:12.0pt;line-height:
+normal;box-sizing: border-box;padding-left:0.5rem'><span style='font-size:
+13.5pt'>your habits</span></li>
+<li class=MsoNormal style='color:#333333;margin-bottom:12.0pt;line-height:
+normal;box-sizing: border-box;padding-left:0.5rem'><span style='font-size:
+13.5pt'>your needs</span></li>
+<li class=MsoNormal style='color:#333333;margin-bottom:12.0pt;line-height:
+normal;box-sizing: border-box;padding-left:0.5rem'><span style='font-size:
+13.5pt'>your likes and dislikes</span></li>
 </ul>
-
 <p style='margin-top:0in;box-sizing: border-box;line-height:var(--text-line-height-m);
 margin-bottom:1rem'><strong style='box-sizing: border-box'><span
 style='font-size:13.5pt;font-family:"Arial","sans-serif";color:#333333'>At the
 end of today's experiment, ask yourself:</span></strong></p>
-
 <ul type=disc style='box-sizing: border-box;margin:1rem;line-height:var(--text-line-height-m)'>
- <li class=MsoNormal style='color:#333333;margin-bottom:12.0pt;line-height:
-     normal;box-sizing: border-box;padding-left:0.5rem'><strong
-     style='box-sizing: border-box'><span style='font-size:13.5pt;font-family:
-     "Arial","sans-serif"'>What was this experience like for me?</span></strong></li>
- <li class=MsoNormal style='color:#333333;margin-bottom:12.0pt;line-height:
-     normal;box-sizing: border-box;padding-left:0.5rem'><strong
-     style='box-sizing: border-box'><span style='font-size:13.5pt;font-family:
-     "Arial","sans-serif"'>What did this experience teach me about myself and
-     what works for me?</span></strong></li>
+<li class=MsoNormal style='color:#333333;margin-bottom:12.0pt;line-height:
+normal;box-sizing: border-box;padding-left:0.5rem'><strong
+style='box-sizing: border-box'><span style='font-size:13.5pt;font-family:
+"Arial","sans-serif"'>What was this experience like for me?</span></strong></li>
+<li class=MsoNormal style='color:#333333;margin-bottom:12.0pt;line-height:
+normal;box-sizing: border-box;padding-left:0.5rem'><strong
+style='box-sizing: border-box'><span style='font-size:13.5pt;font-family:
+"Arial","sans-serif"'>What did this experience teach me about myself and
+what works for me?</span></strong></li>
 </ul>
-
 <p style='margin-top:0in;box-sizing: border-box;line-height:var(--text-line-height-m);
 margin-bottom:1rem'><span style='font-size:13.5pt;font-family:"Arial","sans-serif";
 color:#333333'>This experiment isn't meant to convince you that a certain way
 of eating is &quot;bad&quot; or &quot;good&quot;. It's to focus in on what you
 learn about yourself.</span></p>
-
 </section><section id="ember119" class="ActivityElement ActivityElement--content is-expanded ActivityElement--lesson ember-view" style="box-sizing: border-box; display: inherit; margin-bottom: 3rem;">
-
 <h1 style='margin-top:0in;margin-right:0in;margin-bottom:9.0pt;margin-left:
 0in;box-sizing: border-box;color:var(--vc-lesson)'><span style='font-size:20.5pt;
 font-family:"var(--brand-font)","serif";color:#333333'>Why fast?</span></h1>
-
 <p style='margin-top:0in;box-sizing: border-box;line-height:var(--text-line-height-m);
 margin-bottom:1rem'><span style='font-size:13.5pt;font-family:"Arial","sans-serif";
 color:#333333'>Many people who’ve tried it say that a fasting day is one of the
 hardest—and most illuminating—experiences they've ever had.</span></p>
-
 <p style='margin-top:0in;box-sizing: border-box;line-height:var(--text-line-height-m);
 margin-bottom:1rem'><strong style='box-sizing: border-box'><span
 style='font-size:13.5pt;font-family:"Arial","sans-serif";color:#333333'>You
 learn what true hunger feels like.</span></strong></p>
-
 <p style='margin-top:0in;box-sizing: border-box;line-height:var(--text-line-height-m);
 margin-bottom:1rem'><span style='font-size:13.5pt;font-family:"Arial","sans-serif";
-color:#333333'>Many of us no longer recognize the difference between&nbsp;<em
-style='box-sizing: border-box'><span style='font-family:"Arial","sans-serif"'>psychological</span></em>&nbsp;hunger
-(i.e., wanting to eat) and&nbsp;<em style='box-sizing: border-box'><span
-style='font-family:"Arial","sans-serif"'>physiological</span></em>&nbsp;hunger
+color:#333333'>Many of us no longer recognize the difference between <em
+style='box-sizing: border-box'><span style='font-family:"Arial","sans-serif"'>psychological</span></em> hunger
+(i.e., wanting to eat) and <em style='box-sizing: border-box'><span
+style='font-family:"Arial","sans-serif"'>physiological</span></em> hunger
 (i.e., needing to eat).</span></p>
-
 <p style='margin-top:0in;box-sizing: border-box;line-height:var(--text-line-height-m);
 margin-bottom:1rem'><span style='font-size:13.5pt;font-family:"Arial","sans-serif";
 color:#333333'>The only way to really experience true physiological hunger—to
 tease it out from the background noise—is to stop eating for an extended
 period.</span></p>
-
 <p style='margin-top:0in;box-sizing: border-box;line-height:var(--text-line-height-m);
 margin-bottom:1rem'><strong style='box-sizing: border-box'><span
 style='font-size:13.5pt;font-family:"Arial","sans-serif";color:#333333'>You
 face your fear—and come out swinging.</span></strong></p>
-
 <p style='margin-top:0in;box-sizing: border-box;line-height:var(--text-line-height-m);
 margin-bottom:1rem'><span style='font-size:13.5pt;font-family:"Arial","sans-serif";
 color:#333333'>Are you afraid of being hungry? Many people are.</span></p>
-
 <p style='margin-top:0in;box-sizing: border-box;line-height:var(--text-line-height-m);
 margin-bottom:1rem'><span style='font-size:13.5pt;font-family:"Arial","sans-serif";
 color:#333333'>Fasting for a day, you'll face that fear. You'll learn what it
 feels like when you're legitimately hungry, and how strong intentions can drive
 behavior above body impulses to eat.</span></p>
-
 <p style='margin-top:0in;box-sizing: border-box;line-height:var(--text-line-height-m);
 margin-bottom:1rem'><span style='font-size:13.5pt;font-family:"Arial","sans-serif";
 color:#333333'>Taking the risk of purposely being hungry can teach you about
 the power of a strong commitment amid stress.</span></p>
-
 <p style='margin-top:0in;box-sizing: border-box;line-height:var(--text-line-height-m);
 margin-bottom:1rem'><strong style='box-sizing: border-box'><span
 style='font-size:13.5pt;font-family:"Arial","sans-serif";color:#333333'>It's an
 incredible feeling (and often a great relief) when you learn that you can feel
 hungry—truly hungry—and survive.</span></strong></p>
-
 </section><section id="ember120" class="ActivityElement ActivityElement--content is-expanded ActivityElement--lesson ember-view" style="box-sizing: border-box; display: inherit; margin-bottom: 3rem;">
-
 <h1 style='margin-top:0in;margin-right:0in;margin-bottom:9.0pt;margin-left:
 0in;box-sizing: border-box;color:var(--vc-lesson)'><span style='font-size:20.5pt;
 font-family:"var(--brand-font)","serif";color:#333333'>Assess what's right for
 you</span></h1>
-
 <p style='margin-top:0in;box-sizing: border-box;line-height:var(--text-line-height-m);
 margin-bottom:1rem'><span style='font-size:13.5pt;font-family:"Arial","sans-serif";
-color:#333333'>There are many important reasons to&nbsp;<strong
-style='box-sizing: border-box'><span style='font-family:"Arial","sans-serif"'>not</span></strong>&nbsp;test
+color:#333333'>There are many important reasons to <strong
+style='box-sizing: border-box'><span style='font-family:"Arial","sans-serif"'>not</span></strong> test
 this experiment. Fasting can be unhealthy if:</span></p>
-
 <ul type=disc style='box-sizing: border-box;margin:1rem;line-height:var(--text-line-height-m)'>
- <li class=MsoNormal style='color:#333333;margin-bottom:12.0pt;line-height:
-     normal;box-sizing: border-box;padding-left:0.5rem'><span style='font-size:
-     13.5pt'>You have a medical condition that requires you to eat every day.</span></li>
- <li class=MsoNormal style='color:#333333;margin-bottom:12.0pt;line-height:
-     normal;box-sizing: border-box;padding-left:0.5rem'><span style='font-size:
-     13.5pt'>You struggle with disordered eating and have been told never to
-     fast.</span></li>
- <li class=MsoNormal style='color:#333333;margin-bottom:12.0pt;line-height:
-     normal;box-sizing: border-box;padding-left:0.5rem'><span style='font-size:
-     13.5pt'>You know that periods of food restriction—even if done carefully
-     and consciously—will lead to bingeing later on.</span></li>
- <li class=MsoNormal style='color:#333333;margin-bottom:12.0pt;line-height:
-     normal;box-sizing: border-box;padding-left:0.5rem'><span style='font-size:
-     13.5pt'>You need to be 100% &quot;on your game&quot;, such as flying a
-     plane or doing open-heart surgery.</span></li>
+<li class=MsoNormal style='color:#333333;margin-bottom:12.0pt;line-height:
+normal;box-sizing: border-box;padding-left:0.5rem'><span style='font-size:
+13.5pt'>You have a medical condition that requires you to eat every day.</span></li>
+<li class=MsoNormal style='color:#333333;margin-bottom:12.0pt;line-height:
+normal;box-sizing: border-box;padding-left:0.5rem'><span style='font-size:
+13.5pt'>You struggle with disordered eating and have been told never to
+fast.</span></li>
+<li class=MsoNormal style='color:#333333;margin-bottom:12.0pt;line-height:
+normal;box-sizing: border-box;padding-left:0.5rem'><span style='font-size:
+13.5pt'>You know that periods of food restriction—even if done carefully
+and consciously—will lead to bingeing later on.</span></li>
+<li class=MsoNormal style='color:#333333;margin-bottom:12.0pt;line-height:
+normal;box-sizing: border-box;padding-left:0.5rem'><span style='font-size:
+13.5pt'>You need to be 100% &quot;on your game&quot;, such as flying a
+plane or doing open-heart surgery.</span></li>
 </ul>
-
 <p style='margin-top:0in;box-sizing: border-box;line-height:var(--text-line-height-m);
 margin-bottom:1rem'><strong style='box-sizing: border-box'><span
 style='font-size:13.5pt;font-family:"Arial","sans-serif";color:#333333'>You
-know your body and life best. Do what&nbsp;</span></strong><em
+know your body and life best. Do what </span></strong><em
 style='box-sizing: border-box'><b><span style='font-size:13.5pt;font-family:
 "Arial","sans-serif";color:#333333'>you</span></b></em><strong><span
-style='font-size:13.5pt;font-family:"Arial","sans-serif";color:#333333'>&nbsp;need
+style='font-size:13.5pt;font-family:"Arial","sans-serif";color:#333333'> need
 to do to stay healthy, safe and sane.</span></strong></p>
-
 <p style='margin-top:0in;box-sizing: border-box;line-height:var(--text-line-height-m);
 margin-bottom:1rem'><span style='font-size:13.5pt;font-family:"Arial","sans-serif";
 color:#333333'>Always use outcome-based decision making and your Owner's
 Manual.</span></p>
-
 </section><section id="ember121" class="ActivityElement ActivityElement--content is-expanded ActivityElement--lesson ember-view" style="box-sizing: border-box; display: inherit; margin-bottom: 3rem;">
-
 <h1 style='margin-top:0in;margin-right:0in;margin-bottom:9.0pt;margin-left:
 0in;box-sizing: border-box;color:var(--vc-lesson)'><span style='font-size:20.5pt;
 font-family:"var(--brand-font)","serif";color:#333333'>Make this work for you</span></h1>
-
 <p style='margin-top:0in;box-sizing: border-box;line-height:var(--text-line-height-m);
 margin-bottom:1rem'><strong style='box-sizing: border-box'><span
 style='font-size:13.5pt;font-family:"Arial","sans-serif";color:#333333'>Pick a
 day and a schedule that work for you.</span></strong></p>
-
 <p style='margin-top:0in;box-sizing: border-box;line-height:var(--text-line-height-m);
 margin-bottom:1rem'><span style='font-size:13.5pt;font-family:"Arial","sans-serif";
 color:#333333'>You can fast from dinner to dinner. Or maybe you prefer
 breakfast to breakfast.</span></p>
-
 <p style='margin-top:0in;box-sizing: border-box;line-height:var(--text-line-height-m);
 margin-bottom:1rem'><span style='font-size:13.5pt;font-family:"Arial","sans-serif";
 color:#333333'>If a whole day seems like too much, try just skipping one meal
 (ideally a meal you normally do eat) and noticing what that's like.</span></p>
-
 <p style='margin-top:0in;box-sizing: border-box;line-height:var(--text-line-height-m);
 margin-bottom:1rem'><span style='font-size:13.5pt;font-family:"Arial","sans-serif";
 color:#333333'>Go hour by hour, if you need to.</span></p>
-
 <p style='margin-top:0in;box-sizing: border-box;line-height:var(--text-line-height-m);
 margin-bottom:1rem'><strong style='box-sizing: border-box'><span
 style='font-size:13.5pt;font-family:"Arial","sans-serif";color:#333333'>Do your
 best.</span></strong></p>
-
 <p style='margin-top:0in;box-sizing: border-box;line-height:var(--text-line-height-m);
 margin-bottom:1rem'><span style='font-size:13.5pt;font-family:"Arial","sans-serif";
 color:#333333'>It's all a learning experience.</span></p>
-
 </section><section id="ember122" class="ActivityElement ActivityElement--content is-expanded ActivityElement--lesson ember-view" style="box-sizing: border-box; display: inherit; margin-bottom: 3rem;">
-
 <h1 style='margin-top:0in;margin-right:0in;margin-bottom:9.0pt;margin-left:
 0in;box-sizing: border-box;color:var(--vc-lesson)'><span style='font-size:20.5pt;
 font-family:"var(--brand-font)","serif";color:#333333'>&quot;<em
 style='box-sizing: border-box'><span style='font-family:"var(--brand-font)","serif"'>Will
 I be OK?</span></em>”</span></h1>
-
 <p style='margin-top:0in;box-sizing: border-box;line-height:var(--text-line-height-m);
 margin-bottom:1rem'><span style='font-size:13.5pt;font-family:"Arial","sans-serif";
 color:#333333'>Fasting is safe for most people.</span></p>
-
 <p style='margin-top:0in;box-sizing: border-box;line-height:var(--text-line-height-m);
 margin-bottom:1rem'><span style='font-size:13.5pt;font-family:"Arial","sans-serif";
 color:#333333'>Under generally good health, going 24 hours without food won't
 harm you or degrade fitness. Some evidence suggests occasional fasting may
 offer health benefits.</span></p>
-
 </section><section id="ember123" class="ActivityElement ActivityElement--content is-expanded ActivityElement--lesson ember-view" style="box-sizing: border-box; display: inherit; margin-bottom: 3rem;">
-
 <h1 style='margin-top:0in;margin-right:0in;margin-bottom:9.0pt;margin-left:
 0in;box-sizing: border-box;color:var(--vc-lesson)'><span style='font-size:20.5pt;
 font-family:"var(--brand-font)","serif";color:#333333'>What to expect</span></h1>
-
 <p style='margin-top:0in;margin-right:0in;margin-bottom:5.0pt;margin-left:.5in;
 text-indent:-.25in;box-sizing: border-box;line-height:var(--text-line-height-m);
 margin-bottom:1rem'><span style='font-size:10.0pt;font-family:Symbol;
-color:#333333'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+color:#333333'><li><span style='font:7.0pt "Times New Roman"'> </li>
 </span></span><strong style='box-sizing: border-box'><span style='font-size:
 13.5pt;font-family:"Arial","sans-serif";color:#333333'>Expect to be hungry, of
 course.</span></strong></p>
-
 <p style='margin-top:0in;margin-right:0in;margin-bottom:5.0pt;margin-left:.5in;
 box-sizing: border-box;line-height:var(--text-line-height-m);margin-bottom:
 1rem'><span style='font-size:13.5pt;font-family:"Arial","sans-serif";
 color:#333333'>Notice if the experience in the moment matches your
 expectations. Is it as painful or challenging as you thought it would feel?</span></p>
-
 <p style='margin-top:0in;margin-right:0in;margin-bottom:5.0pt;margin-left:.5in;
 text-indent:-.25in;box-sizing: border-box;line-height:var(--text-line-height-m);
 margin-bottom:1rem'><span style='font-size:10.0pt;font-family:Symbol;
-color:#333333'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+color:#333333'><li><span style='font:7.0pt "Times New Roman"'> </li>
 </span></span><strong style='box-sizing: border-box'><span style='font-size:
 13.5pt;font-family:"Arial","sans-serif";color:#333333'>Expect hunger to come in
 waves.</span></strong></p>
-
 <p style='margin-top:0in;margin-right:0in;margin-bottom:5.0pt;margin-left:.5in;
 box-sizing: border-box;line-height:var(--text-line-height-m);margin-bottom:
 1rem'><span style='font-size:13.5pt;font-family:"Arial","sans-serif";
 color:#333333'>Hunger hormones are pulsatile. Hunger feelings will come and go
 gradually, rather than continually gaining in intensity. For example, hunger could
 be strongest about 3 to 4-hours after eating, then subside.</span></p>
-
 <p style='margin-top:0in;margin-right:0in;margin-bottom:5.0pt;margin-left:.5in;
 text-indent:-.25in;box-sizing: border-box;line-height:var(--text-line-height-m);
 margin-bottom:1rem'><span style='font-size:10.0pt;font-family:Symbol;
-color:#333333'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+color:#333333'><li><span style='font:7.0pt "Times New Roman"'> </li>
 </span></span><strong style='box-sizing: border-box'><span style='font-size:
 13.5pt;font-family:"Arial","sans-serif";color:#333333'>Expect to notice food a
 lot more.</span></strong></p>
-
 <p style='margin-top:0in;margin-right:0in;margin-bottom:5.0pt;margin-left:.5in;
 box-sizing: border-box;line-height:var(--text-line-height-m);margin-bottom:
 1rem'><span style='font-size:13.5pt;font-family:"Arial","sans-serif";
 color:#333333'>Observe how food cues and triggers are all around you, and how
 you want to respond to them.</span></p>
-
 <p style='margin-top:0in;margin-right:0in;margin-bottom:5.0pt;margin-left:.5in;
 text-indent:-.25in;box-sizing: border-box;line-height:var(--text-line-height-m);
 margin-bottom:1rem'><span style='font-size:10.0pt;font-family:Symbol;
-color:#333333'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+color:#333333'><li><span style='font:7.0pt "Times New Roman"'> </li>
 </span></span><strong style='box-sizing: border-box'><span style='font-size:
 13.5pt;font-family:"Arial","sans-serif";color:#333333'>Expect to confront
 resistance within yourself.</span></strong></p>
-
 <p style='margin-top:0in;margin-right:0in;margin-bottom:5.0pt;margin-left:.5in;
 box-sizing: border-box;line-height:var(--text-line-height-m);margin-bottom:
 1rem'><em style='box-sizing: border-box'><span style='font-size:13.5pt;
 font-family:"Arial","sans-serif";color:#333333'>&quot;You people are crazy!&quot;</span></em><span
-style='font-size:13.5pt;font-family:"Arial","sans-serif";color:#333333'>&nbsp;<em
+style='font-size:13.5pt;font-family:"Arial","sans-serif";color:#333333'> <em
 style='box-sizing: border-box'><span style='font-family:"Arial","sans-serif"'>&quot;I’ll
-die without lunch!&quot;</span></em>&nbsp;Practice facing the fear with calm
+die without lunch!&quot;</span></em> Practice facing the fear with calm
 and ease.</span></p>
-
 <p style='margin-top:0in;margin-right:0in;margin-bottom:5.0pt;margin-left:.5in;
 text-indent:-.25in;box-sizing: border-box;line-height:var(--text-line-height-m);
 margin-bottom:1rem'><span style='font-size:10.0pt;font-family:Symbol;
-color:#333333'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+color:#333333'><li><span style='font:7.0pt "Times New Roman"'> </li>
 </span></span><strong style='box-sizing: border-box'><span style='font-size:
 13.5pt;font-family:"Arial","sans-serif";color:#333333'>Expect to progress one
 moment at a time.</span></strong></p>
-
 <p style='margin-top:0in;margin-right:0in;margin-bottom:5.0pt;margin-left:.5in;
 box-sizing: border-box;line-height:var(--text-line-height-m);margin-bottom:
 1rem'><span style='font-size:13.5pt;font-family:"Arial","sans-serif";
 color:#333333'>Rather than thinking about the whole 24-hour day, go step by
 step, minute by minute, moment to moment.</span></p>
-
 <p style='margin-top:0in;margin-right:0in;margin-bottom:5.0pt;margin-left:.5in;
 text-indent:-.25in;box-sizing: border-box;line-height:var(--text-line-height-m);
 margin-bottom:1rem'><span style='font-size:10.0pt;font-family:Symbol;
-color:#333333'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+color:#333333'><li><span style='font:7.0pt "Times New Roman"'> </li>
 </span></span><strong style='box-sizing: border-box'><span style='font-size:
 13.5pt;font-family:"Arial","sans-serif";color:#333333'>Expect this to be a
 learning experience.</span></strong></p>
-
 <p style='margin-top:0in;margin-right:0in;margin-bottom:5.0pt;margin-left:.5in;
 box-sizing: border-box;line-height:var(--text-line-height-m);margin-bottom:
 1rem'><span style='font-size:13.5pt;font-family:"Arial","sans-serif";
 color:#333333'>You might not be happy while you're in it. The insight is
 longer-lasting and invaluable.</span></p>
-
 <p style='margin-top:0in;margin-right:0in;margin-bottom:5.0pt;margin-left:.5in;
 text-indent:-.25in;box-sizing: border-box;line-height:var(--text-line-height-m);
 margin-bottom:1rem'><span style='font-size:10.0pt;font-family:Symbol;
-color:#333333'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+color:#333333'><li><span style='font:7.0pt "Times New Roman"'> </li>
 </span></span><strong style='box-sizing: border-box'><span style='font-size:
-13.5pt;font-family:"Arial","sans-serif";color:#333333'>Expect that you&nbsp;</span></strong><em
+13.5pt;font-family:"Arial","sans-serif";color:#333333'>Expect that you </span></strong><em
 style='box-sizing: border-box'><b><span style='font-size:13.5pt;font-family:
 "Arial","sans-serif";color:#333333'>can do this</span></b></em><strong><span
 style='font-size:13.5pt;font-family:"Arial","sans-serif";color:#333333'>.</span></strong></p>
-
 <p style='margin-top:0in;margin-right:0in;margin-bottom:5.0pt;margin-left:.5in;
 box-sizing: border-box;line-height:var(--text-line-height-m);margin-bottom:
 1rem'><span style='font-size:13.5pt;font-family:"Arial","sans-serif";
 color:#333333'>Your ancestors thousands of years ago didn’t get three square
 meals a day. Evolution’s equipped you with the tools to handle this.</span></p>
-
 </section><section id="ember124" class="ActivityElement ActivityElement--content is-expanded ActivityElement--lesson ember-view" style="box-sizing: border-box; display: inherit; margin-bottom: 3rem;">
-
 <h1 style='margin-top:0in;margin-right:0in;margin-bottom:9.0pt;margin-left:
 0in;box-sizing: border-box;color:var(--vc-lesson)'><span style='font-size:20.5pt;
 font-family:"var(--brand-font)","serif";color:#333333'>At the end of the day...</span></h1>
-
 <p style='margin-top:0in;box-sizing: border-box;line-height:var(--text-line-height-m);
 margin-bottom:1rem'><strong style='box-sizing: border-box'><span
 style='font-size:13.5pt;font-family:"Arial","sans-serif";color:#333333'>What do
 you observe?</span></strong></p>
-
 <p style='margin-top:0in;box-sizing: border-box;line-height:var(--text-line-height-m);
 margin-bottom:1rem'><span style='font-size:13.5pt;font-family:"Arial","sans-serif";
 color:#333333'>When you look back on your day, record your observations in your
 Owner's Manual.</span></p>
-
 <p style='margin-top:0in;box-sizing: border-box;line-height:var(--text-line-height-m);
 margin-bottom:1rem'><strong style='box-sizing: border-box'><span
 style='font-size:13.5pt;font-family:"Arial","sans-serif";color:#333333'>Expect
 that you may be hungrier for 1-2 days afterwards.</span></strong></p>
-
 <p style='margin-top:0in;box-sizing: border-box;line-height:var(--text-line-height-m);
 margin-bottom:1rem'><span style='font-size:13.5pt;font-family:"Arial","sans-serif";
 color:#333333'>Be prepared. Plan ahead. Have a &quot;safety plan&quot; to
 prevent food madness.</span></p>
-
 <p style='margin-top:0in;box-sizing: border-box;line-height:var(--text-line-height-m);
 margin-bottom:1rem'><span style='font-size:13.5pt;font-family:"Arial","sans-serif";
 color:#333333'>And stay &quot;checked in&quot; to whatever you think and feel.</span></p>
-
 </section>
-
 <div class=MsoNormal align=center style='text-align:center'><span
 style='font-size:13.5pt;line-height:115%;color:#333333'>
-
 <hr size=2 width="100%" align=center id=ember125 style='box-sizing: content-box;
 border-top:0.0625rem solid var(--c-grey-light);border-image: initial;
 height:0.0625rem;margin-bottom:3rem;display:inherit'>
-
 </span></div>
-
 <h1 style='margin-top:0in;margin-right:0in;margin-bottom:9.0pt;margin-left:
 0in;box-sizing: border-box;color:var(--vc-lesson)'><span style='font-size:20.5pt;
 font-family:"var(--brand-font)","serif";color:#333333'><section id="ember126" class="ActivityElement ActivityElement--content is-expanded ActivityElement--lesson ember-view" style="box-sizing: border-box; display: inherit; margin-bottom: 3rem;">Write
 your Owner's Manual</span></h1>
-
 <h6 style='margin-top:0in;margin-right:0in;margin-bottom:9.0pt;margin-left:
 0in;box-sizing: border-box;color:var(--c-card-headline-light)'><em
 style='box-sizing: border-box'><b><span style='line-height:115%;font-family:
@@ -538,41 +458,28 @@ style='box-sizing: border-box'><b><span style='line-height:115%;font-family:
 reflect. Your answers will be captured in Your Owner's Manual. Coaches often
 read your answers but don't always respond. Be sure to reach out to your coach
 if you want specific feedback.</span></b></em></h6>
-
 </section><section id="ember127" class="ActivityElement ActivityElement--textArea is-expanded ActivityElement--lesson ember-view" style="box-sizing: border-box; display: inherit; margin-bottom: 3rem;">
-
 <p style='margin-top:0in;box-sizing: border-box'><span style='font-size:24.0pt;
 font-family:"Arial","sans-serif";color:#333333'>How did you feel during this
 experiment? What did you learn?</span></p>
-
 <p class=MsoNormal><span style='font-size:13.5pt;line-height:115%;color:#333333'><TEXTAREA NAME="feel+W31"
 id=ember128 data-test-selector=input-field
 style="box-sizing: border-box; overflow: auto; color: inherit; font: inherit; margin: 0px; border: var(--input-border); width: 493px; min-height: 8rem; padding: calc(var(--spacing-unit)/ 2); background: rgb(255, 255, 255); resize: vertical; outline: 0px;"></TEXTAREA></span></p>
-
 <p style='margin-top:0in;box-sizing: border-box'><span style='font-size:24.0pt;
 font-family:"Arial","sans-serif";color:#333333'></section><section id="ember129" class="ActivityElement ActivityElement--textArea is-expanded ActivityElement--lesson ember-view" style="box-sizing: border-box; display: inherit; margin-bottom: 3rem;">What
 was the best thing about this experiment?</span></p>
-
 <p class=MsoNormal><span style='font-size:13.5pt;line-height:115%;color:#333333'><TEXTAREA NAME="best_thing_W31"
 id=ember130 data-test-selector=input-field
 style="box-sizing: border-box; overflow: auto; color: inherit; font: inherit; margin: 0px; border: var(--input-border); width: 493px; min-height: 8rem; padding: calc(var(--spacing-unit)/ 2); background: rgb(255, 255, 255); resize: vertical; outline: 0px;"></TEXTAREA></span></p>
-
 <p style='margin-top:0in;box-sizing: border-box'><span style='font-size:24.0pt;
 font-family:"Arial","sans-serif";color:#333333'></section><section id="ember131" class="ActivityElement ActivityElement--textArea is-expanded ActivityElement--lesson ember-view" style="box-sizing: border-box; display: inherit; margin-bottom: 3rem;">What
 was the worst thing about this experiment?</span></p>
-
 <p class=MsoNormal><span style='font-size:13.5pt;line-height:115%;color:#333333'><TEXTAREA NAME="worst_thing_W31"
 id=ember132 data-test-selector=input-field
 style="box-sizing: border-box; overflow: auto; color: inherit; font: inherit; margin: 0px; border: var(--input-border); width: 493px; min-height: 8rem; padding: calc(var(--spacing-unit)/ 2); background: rgb(255, 255, 255); resize: vertical; outline: 0px;"></TEXTAREA></span></p>
-
 </form>
-
 </section>
-
-<p class=MsoNormal>&nbsp;</p>
-
+<p class=MsoNormal> </p>
 </div>
-
 </body>
-
 </html>
